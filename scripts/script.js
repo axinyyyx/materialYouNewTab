@@ -1,6 +1,6 @@
 /*
  * Material You NewTab
- * Copyright (c) 2023-2025 XengShi
+ * Copyright (c) 2023-2025 axinyyyx
  * Licensed under the GNU General Public License v3.0 (GPL-3.0)
  * You should have received a copy of the GNU General Public License along with this program.
  * If not, see <https://www.gnu.org/licenses/>.
@@ -1456,19 +1456,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // The new shortcut placeholder info
     const PLACEHOLDER_SHORTCUT_NAME = "New shortcut";
-    const PLACEHOLDER_SHORTCUT_URL = "https://github.com/XengShi/materialYouNewTab";
+    const PLACEHOLDER_SHORTCUT_URL = "https://github.com/axinyyyx/materialYouNewTab";
 
     // The placeholder for an empty shortcut
     const SHORTCUT_NAME_PLACEHOLDER = "Shortcut Name";
     const SHORTCUT_URL_PLACEHOLDER = "Shortcut URL";
 
-    const SHORTCUT_PRESET_NAMES = ["Youtube", "Gmail", "Telegram", "WhatsApp", "Instagram", "Twitter"];
+    const SHORTCUT_PRESET_NAMES = ["Youtube","RiMusic", "Gmail", "Telegram", "WhatsApp", "Instagram", "Twitter"];
     const SHORTCUT_PRESET_URLS_AND_LOGOS = Object.freeze(new Map([["youtube.com", `
             <svg fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
                 <path class="accentColor shorcutDarkColor"
                     d="M11.6698 9.82604L9.33021 8.73437C9.12604 8.63958 8.95833 8.74583 8.95833 8.97187V11.0281C8.95833 11.2542 9.12604 11.3604 9.33021 11.2656L11.6688 10.174C11.874 10.0781 11.874 9.92188 11.6698 9.82604ZM10 0C4.47708 0 0 4.47708 0 10C0 15.5229 4.47708 20 10 20C15.5229 20 20 15.5229 20 10C20 4.47708 15.5229 0 10 0ZM10 14.0625C4.88125 14.0625 4.79167 13.601 4.79167 10C4.79167 6.39896 4.88125 5.9375 10 5.9375C15.1187 5.9375 15.2083 6.39896 15.2083 10C15.2083 13.601 15.1187 14.0625 10 14.0625Z"
                     fill="#617859"/>
-            </svg>`], ["mail.google.com", `
+            </svg>`], ["rimusic.vercel.app", `
+            <svg fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+	            <circle cx="12" cy="12" r="12" class="accentColor shorcutDarkColor"/>
+                <g transform="translate(12, 12) scale(0.7) translate(-10, -10)">
+	            <path class="bgLightTint" id="darkLightTint" fill-rule="evenodd"
+                    d="m7.172 11.334l2.83 1.935l2.728-1.882l6.115 6.033q-.242.079-.512.08H1.667c-.22 0-.43-.043-.623-.12zM20 6.376v9.457c0 .247-.054.481-.15.692l-5.994-5.914zM0 6.429l6.042 4.132l-5.936 5.858A1.7 1.7 0 0 1 0 15.833zM18.333 2.5c.92 0 1.667.746 1.667 1.667v.586L9.998 11.648L0 4.81v-.643C0 3.247.746 2.5 1.667 2.5z" />
+                </g>
+            </svg>
+            `], ["mail.google.com", `
             <svg fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 	            <circle cx="12" cy="12" r="12" class="accentColor shorcutDarkColor"/>
                 <g transform="translate(12, 12) scale(0.7) translate(-10, -10)">
@@ -1757,7 +1765,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Validate URL before normalizing
         if (!isValidUrl(url)) {
             // alert("Invalid URL. Please enter a valid URL with http or https protocol.");
-            url = "https://xengshi.github.io/materialYouNewTab/docs/PageNotFound.html";
+            url = "https://x-material-ui.vercel.app/docs/PageNotFound.html";
         }
 
         // Normalize URL if valid
@@ -1929,7 +1937,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (hostname === "github.com") {
             logo.src = "./svgs/shortcuts_icons/github-shortcut.svg";
-        } else if (urlString === "https://xengshi.github.io/materialYouNewTab/docs/PageNotFound.html") {
+        } else if (urlString === "https://x-material-ui.vercel.app/docs/PageNotFound.html") {
             // Special case for invalid URLs
             logo.src = "./svgs/shortcuts_icons/invalid-url.svg";
         } else {
