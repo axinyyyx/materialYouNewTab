@@ -530,11 +530,10 @@ document.addEventListener("DOMContentLoaded", () => {
         var searchTerm = searchInput.value;
         var searchEngines = {
             engine1: "https://www.google.com/search?q=",
-            engine2: "https://bing.com/?q=",
-            engine3: "https://rishabhsahilll.github.io/rishabh-search-engine/search?q=",
-            engine4: "https://duckduckgo.com/?q=",
-            engine5: "https://search.brave.com/search?q=",
-            engine6: "https://www.youtube.com/results?search_query="
+            engine2: "https://duckduckgo.com/?q=",
+            engine3: "https://bing.com/?q=",
+            engine4: "https://search.brave.com/search?q=",
+            engine5: "https://www.youtube.com/results?search_query="
         };
 
         if (searchTerm !== "") {
@@ -1198,11 +1197,10 @@ document.getElementById("searchQ").addEventListener("input", async function () {
         var selectedOption = document.querySelector("input[name='search-engine']:checked").value;
         var searchEngines = {
             engine1: "https://www.google.com/search?q=",
-            engine2: "https://bing.com/?q=",
-            engine3: "https://rishabhsahilll.github.io/rishabh-search-engine/search?q=",
-            engine4: "https://duckduckgo.com/?q=",
-            engine5: "https://search.brave.com/search?q=",
-            engine6: "https://www.youtube.com/results?search_query="
+            engine2: "https://duckduckgo.com/?q=",
+            engine3: "https://bing.com/?q=",
+            engine4: "https://search.brave.com/search?q=",
+            engine5: "https://www.youtube.com/results?search_query="
         };
         const query = this.value;
         const resultBox = document.getElementById("resultBox");
